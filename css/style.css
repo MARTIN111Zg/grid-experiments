@@ -1,0 +1,112 @@
+:root {
+    --apple : #ea0b29;
+    --banana:#FFE135;
+    --grapes:#6f2da8;
+    --mango:#FF8243;
+    --strawberry:#fc5a8d;
+    --tomato:#FF6347;
+    --navy:#001f3f;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+.main {
+    width: 100vw;
+    
+}
+.main h1 {
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing:.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.main h1 span.l1 {
+    color: var(--apple);
+}
+.main h1 span.l2 {
+    color: var(--banana);
+}
+.main h1 span.l3 {
+    color: var(--grapes);
+}
+.main h1 span.l4 {
+    color: var(--mango);
+}
+.main h1 span.l5 {
+    color: var(--strawberry);
+}
+.main h1 span.l6 {
+    color: var(--tomato);
+}
+.main h2 {
+    font-size: 2.5rem;
+    color:limegreen;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+      
+}
+.fruit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #fff;
+    background-color:#6f7479;
+    border-radius: .5rem;
+}
+.fruit-item-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    padding: 3rem .5rem;
+    position: relative;
+   
+}
+
+.fruit-item-name {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 2rem 0;
+    letter-spacing: .8rem;
+    line-height: normal;
+}
+h4.grapes.fruit-item-name {
+    color: var(--grapes);
+}
+.fruit-item-text {
+    font-size: 1.7rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
+.fruit-item a {
+    text-decoration: none;
+    padding: 2rem 1rem;
+    font-size: 2.2rem;
+}
+.apple {color: var(--apple);}
+.banana {color:var(--banana);};
+.grapes {color: var(--grapes);}
+.mango {color: var(--mango);}
+.strawberry {color: var(--strawberry);}
+.tomato {color: var(--tomato);}
+.fruit-item a:hover {
+    animation: puls 2s infinite;
+}
+@keyframes puls {
+    from {transform: scale(0.8);}
+    to {transform: scale(1.1);}
+  }
